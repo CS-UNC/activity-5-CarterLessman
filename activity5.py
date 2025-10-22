@@ -47,4 +47,12 @@ def uses_only(word, letters):
     
 print(uses_only("abracadabra", "abr"))
 
-# def all_uses_only(file, letters):
+def all_uses_only(file, letters):
+    data = open(file, 'r')
+    words = []
+    for word in data:
+        if uses_only(word.strip(), letters):
+            words.append(word.strip())
+    return words 
+    
+print(all_uses_only("CROSSWD.txt", "abr"))
