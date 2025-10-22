@@ -47,5 +47,4 @@ def uses_only(word, letters):
     
 print(uses_only("abracadabra", "abr"))
 
-def all_uses_only(file, letters):
-    
+# def all_uses_only(file, letters):
